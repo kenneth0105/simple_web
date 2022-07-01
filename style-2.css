@@ -1,0 +1,119 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+background-image: url(starlightRoof1.jpg);
+background-size: cover;
+background-position:top;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.menu-bar
+{
+    background:rgb(255, 166, 0);
+    text-align: center;
+}
+
+.menu-bar ul
+{
+    display:inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li
+{
+    width: 100px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.active,.menu-bar ul li:hover
+{
+    background-color: rgb(126, 71, 0);
+    border-radius: 5px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display:block;
+    position: absolute;
+    background: rgb(134, 134, 134);
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius: 0px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover
+{
+    background-color: rgb(75, 75, 75);
+    border-radius: 5px;
+    
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double rgb(255, 255, 255);
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: blue;
+}
+
+.menu-bar ul li a:hover
+{
+    color: blue;
+}
+
+.sub-menu-2
+{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+    display:block;
+    position: absolute;
+    background: rgb(255, 28, 28);
+    margin-top: -38px;
+    margin-left: 150px;
+    border-radius: 0px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover .sub-menu-2 ul li:hover
+{
+    background: rgb(83, 5, 5);
+    border-radius: 5px;
+}
